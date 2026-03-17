@@ -31,15 +31,6 @@ class SettingsFragment : PreferenceFragmentCompat() {
         languagePreference?.setOnPreferenceChangeListener { _, newValue ->
             val selectedLanguage = AppUiSettings.normalizeLanguageValue(newValue as? String)
             AppCompatDelegate.setApplicationLocales(AppUiSettings.buildLocaleList(selectedLanguage))
-
-            /*
-                Die explizite Recreate-Auslösung ist hier wichtig, weil der erste Wechsel
-                sonst je nach Startzustand zwar gespeichert, aber nicht sofort vollständig
-                auf die bereits sichtbare Settings-Activity angewendet wurde.
-             */
-            activity?.window?.decorView?.post {
-                activity?.recreate()
-            }
             true
         }
 

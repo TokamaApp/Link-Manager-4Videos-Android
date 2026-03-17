@@ -27,6 +27,11 @@ object AppUiSettings {
     /**
      * Muss vor dem Inflate der Activity ausgeführt werden, damit das korrekte
      * Day/Night-Theme schon beim ersten Rendern aktiv ist.
+     *
+     * Die App-Sprache selbst wird von AppCompat verwaltet. Durch die
+     * Manifest-Metadaten mit autoStoreLocales wird der gewählte Sprachwert auf
+     * Android 12 und älter automatisch persistiert und vor dem Activity-Rendern
+     * wiederhergestellt.
      */
     fun applySavedNightMode(context: Context) {
         AppCompatDelegate.setDefaultNightMode(toNightMode(getStoredThemeValue(context)))

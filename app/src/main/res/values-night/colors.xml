@@ -2,7 +2,7 @@
     <color name="colorPrimary">#2E7D32</color>
     <color name="colorPrimaryDark">#0B1F0D</color>
     <color name="colorAccent">#66BB6A</color>
-    <color name="colorBackground">#121212</color>
+    <color name="colorBackground">#313131</color>
     <color name="colorText">#F5F5F5</color>
     <color name="ratingNeutral">#757575</color>
     <color name="ratingVeryGood">#2E7D32</color>

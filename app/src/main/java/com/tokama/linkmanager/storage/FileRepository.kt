@@ -4,6 +4,7 @@ import android.content.Context
 import android.net.Uri
 import android.provider.DocumentsContract
 import android.provider.OpenableColumns
+import com.tokama.linkmanager.R
 import com.tokama.linkmanager.data.LinkEntry
 import com.tokama.linkmanager.data.LinkRating
 import com.tokama.linkmanager.util.LinkParser
@@ -34,7 +35,7 @@ class FileRepository(private val context: Context) {
                 return cursor.getString(index)
             }
         }
-        return uri.lastPathSegment ?: "Unbekannte Datei"
+        return uri.lastPathSegment ?: context.getString(R.string.unknown_file)
     }
 
     /**
@@ -155,7 +156,7 @@ class FileRepository(private val context: Context) {
     private fun writeContent(uri: Uri, content: String) {
         context.contentResolver.openOutputStream(uri, "wt")?.bufferedWriter(Charsets.UTF_8)?.use {
             it.write(content)
-        } ?: error("Datei konnte nicht geöffnet werden")
+        } ?: error(context.getString(R.string.write_error))
     }
 
     private fun resolveDocumentPath(uri: Uri, fallbackDisplayName: String): String? {
@@ -187,8 +188,8 @@ class FileRepository(private val context: Context) {
         val relativePath = parts.getOrNull(1).orEmpty().trim('/')
 
         val basePath = when (volumeId.lowercase(Locale.ROOT)) {
-            "", "primary", "home" -> "Interner Speicher"
-            else -> "Speicher $volumeId"
+            "", "primary", "home" -> context.getString(R.string.path_internal_storage)
+            else -> context.getString(R.string.path_storage_volume, volumeId)
         }
 
         return when {
@@ -224,13 +225,16 @@ class FileRepository(private val context: Context) {
 
         if (candidatePathPart.contains('/')) {
             return if (candidatePathPart.endsWith("/$fallbackDisplayName", ignoreCase = true)) {
-                appendPath("Downloads", candidatePathPart)
+                appendPath(context.getString(R.string.path_downloads), candidatePathPart)
             } else {
-                appendPath("Downloads", appendPath(candidatePathPart, fallbackDisplayName))
+                appendPath(
+                    context.getString(R.string.path_downloads),
+                    appendPath(candidatePathPart, fallbackDisplayName)
+                )
             }
         }
 
-        return appendPath("Downloads", fallbackDisplayName)
+        return appendPath(context.getString(R.string.path_downloads), fallbackDisplayName)
     }
 
     private fun buildMediaPath(
@@ -240,10 +244,10 @@ class FileRepository(private val context: Context) {
         val mediaType = Uri.decode(documentId).substringBefore(':').lowercase(Locale.ROOT)
 
         val basePath = when (mediaType) {
-            "image" -> "Bilder"
-            "video" -> "Videos"
-            "audio" -> "Audio"
-            else -> "Medien"
+            "image" -> context.getString(R.string.path_images)
+            "video" -> context.getString(R.string.path_videos)
+            "audio" -> context.getString(R.string.path_audio)
+            else -> context.getString(R.string.path_media)
         }
 
         return appendPath(basePath, fallbackDisplayName)
@@ -271,22 +275,31 @@ class FileRepository(private val context: Context) {
             .trim()
 
         if (normalizedPath.isBlank()) {
-            return "Unbekannte Datei"
+            return context.getString(R.string.unknown_file)
         }
 
         return when {
-            normalizedPath == "/storage/emulated/0" -> "Interner Speicher"
+            normalizedPath == "/storage/emulated/0" -> context.getString(R.string.path_internal_storage)
             normalizedPath.startsWith("/storage/emulated/0/") -> {
-                appendPath("Interner Speicher", normalizedPath.removePrefix("/storage/emulated/0/"))
+                appendPath(
+                    context.getString(R.string.path_internal_storage),
+                    normalizedPath.removePrefix("/storage/emulated/0/")
+                )
             }
 
-            normalizedPath == "/sdcard" -> "Interner Speicher"
+            normalizedPath == "/sdcard" -> context.getString(R.string.path_internal_storage)
             normalizedPath.startsWith("/sdcard/") -> {
-                appendPath("Interner Speicher", normalizedPath.removePrefix("/sdcard/"))
+                appendPath(
+                    context.getString(R.string.path_internal_storage),
+                    normalizedPath.removePrefix("/sdcard/")
+                )
             }
 
             normalizedPath.startsWith("/storage/") -> {
-                appendPath("Externer Speicher", normalizedPath.removePrefix("/storage/"))
+                appendPath(
+                    context.getString(R.string.path_external_storage),
+                    normalizedPath.removePrefix("/storage/")
+                )
             }
 
             else -> normalizedPath

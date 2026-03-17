@@ -1,43 +1,51 @@
 <resources>
     <string name="app_name">Link-Manager: 4Videos</string>
-    <string name="add_file">Liste auswählen</string>
-    <string name="file_screen_info">Tippe auf eine Datei, um ihre Links zu öffnen. Gedrückt halten, um weitere Optionen anzuzeigen.</string>
-    <string name="no_files">Noch keine Liste erstellt. Erstellen Sie eine Liste.</string>
-    <string name="file_added">Datei hinzugefügt</string>
-    <string name="file_already_added">Datei ist bereits gespeichert</string>
-    <string name="remove_file_title">Datei aus Liste entfernen</string>
-    <string name="remove_file_message">Soll „%1$s“ nur aus der App-Liste entfernt werden?</string>
-    <string name="remove">Entfernen</string>
-    <string name="cancel">Abbrechen</string>
+    <string name="add_file">Select list</string>
+    <string name="file_screen_info">Tap a file to open its links. Press and hold to show more options.</string>
+    <string name="no_files">No list has been created yet. Create a list.</string>
+    <string name="file_added">File added</string>
+    <string name="file_already_added">File is already saved</string>
+    <string name="remove_file_title">Remove file from list</string>
+    <string name="remove_file_message">Remove “%1$s” from the app list only?</string>
+    <string name="remove">Remove</string>
+    <string name="cancel">Cancel</string>
 
-    <string name="link_list_title">Linkliste</string>
-    <string name="unknown_file">Unbekannte Datei</string>
-    <string name="selected_browser">Standardbrowser: %1$s</string>
-    <string name="choose_browser">Browser wählen</string>
-    <string name="add_link">Link hinzufügen</string>
-    <string name="add_link_hint">https://beispiel.com</string>
-    <string name="save">Speichern</string>
-    <string name="invalid_link">Kein gültiger Link</string>
-    <string name="duplicate_link">Link existiert bereits</string>
-    <string name="link_added">Link wurde angehängt</string>
-    <string name="no_supported_browser">Kein unterstützter Browser verfügbar</string>
-    <string name="no_links">Diese Liste enthält aktuell noch keine Links.</string>
-    <string name="no_links_for_filter">Keine Einträge passen zum aktuellen Filter.</string>
-    <string name="delete">Löschen</string>
-    <string name="delete_link_title">Link löschen</string>
-    <string name="delete_link_message">Soll dieser Eintrag wirklich gelöscht werden?
+    <string name="link_list_title">Link list</string>
+    <string name="unknown_file">Unknown file</string>
+    <string name="path_internal_storage">Internal storage</string>
+    <string name="path_external_storage">External storage</string>
+    <string name="path_storage_volume">Storage %1$s</string>
+    <string name="path_downloads">Downloads</string>
+    <string name="path_images">Images</string>
+    <string name="path_videos">Videos</string>
+    <string name="path_audio">Audio</string>
+    <string name="path_media">Media</string>
+    <string name="selected_browser">Default browser: %1$s</string>
+    <string name="choose_browser">Choose browser</string>
+    <string name="add_link">Add link</string>
+    <string name="add_link_hint">https://example.com</string>
+    <string name="save">Save</string>
+    <string name="invalid_link">No valid link</string>
+    <string name="duplicate_link">Link already exists</string>
+    <string name="link_added">Link appended</string>
+    <string name="no_supported_browser">No supported browser available</string>
+    <string name="no_links">This list does not contain any links yet.</string>
+    <string name="no_links_for_filter">No entries match the current filter.</string>
+    <string name="delete">Delete</string>
+    <string name="delete_link_title">Delete link</string>
+    <string name="delete_link_message">Do you really want to delete this entry?
 
 %1$s</string>
 
-    <string name="rating_none">Ohne Bewertung</string>
-    <string name="rating_remove">Bewertung entfernen</string>
-    <string name="rating_very_good">Sehr gut</string>
-    <string name="rating_good">Gut</string>
+    <string name="rating_none">No rating</string>
+    <string name="rating_remove">Remove rating</string>
+    <string name="rating_very_good">Very good</string>
+    <string name="rating_good">Good</string>
     <string name="rating_okay">Okay</string>
-    <string name="rating_bad">Schlecht</string>
-    <string name="rating_very_bad">Sehr schlecht</string>
+    <string name="rating_bad">Bad</string>
+    <string name="rating_very_bad">Very bad</string>
 
-    <string name="browser_chrome_incognito">Chrome (Inkognito)</string>
+    <string name="browser_chrome_incognito">Chrome (Incognito)</string>
     <string name="browser_chrome_normal">Chrome</string>
     <string name="browser_brave_normal">Brave</string>
     <string name="browser_edge_normal">Microsoft Edge</string>
@@ -46,85 +54,85 @@
     <string name="browser_opera_normal">Opera</string>
     <string name="browser_duckduckgo_normal">DuckDuckGo Browser</string>
 
-    <string name="read_error">Datei konnte nicht gelesen werden</string>
-    <string name="write_error">Datei konnte nicht geschrieben werden</string>
+    <string name="read_error">Could not read file</string>
+    <string name="write_error">Could not write file</string>
 
-    <string name="rating_section_title">Bewertung</string>
-    <string name="browser_chrome_incognito_experimental">Chrome (Inkognito, experimentell)</string>
-    <string name="incognito_not_supported_fallback">Direktes Inkognito-Öffnen wird von Chrome auf diesem Gerät nicht zuverlässig unterstützt – öffne normal.</string>
-    <string name="open_normal_browser_fallback">Öffne im normalen Browser</string>
+    <string name="rating_section_title">Rating</string>
+    <string name="browser_chrome_incognito_experimental">Chrome (Incognito, experimental)</string>
+    <string name="incognito_not_supported_fallback">Direct incognito opening is not reliably supported by Chrome on this device – opening normally.</string>
+    <string name="open_normal_browser_fallback">Open in normal browser</string>
 
-    <string name="selection_mode_hint">Tippe weitere Links zum Auswählen.</string>
-    <string name="action_open_selected">Öffnen</string>
-    <string name="action_delete_selected">Ausgewählte löschen</string>
-    <string name="selected_count_title">%1$d ausgewählt</string>
-    <string name="no_links_selected">Keine Links ausgewählt</string>
+    <string name="selection_mode_hint">Tap more links to select them.</string>
+    <string name="action_open_selected">Open</string>
+    <string name="action_delete_selected">Delete selected</string>
+    <string name="selected_count_title">%1$d selected</string>
+    <string name="no_links_selected">No links selected</string>
 
-    <string name="delete_selected_title">Mehrere Links löschen</string>
-    <string name="delete_selected_message">Sollen %1$d ausgewählte Links gelöscht werden?</string>
-    <string name="delete_selected_confirm">Ausgewählte löschen</string>
-    <string name="rate_now">Bewerten</string>
+    <string name="delete_selected_title">Delete multiple links</string>
+    <string name="delete_selected_message">Delete %1$d selected links?</string>
+    <string name="delete_selected_confirm">Delete selected</string>
+    <string name="rate_now">Rate now</string>
     <string name="browser_firefox_normal">Firefox</string>
-    <string name="browser_firefox_private_experimental">Firefox (privat, experimentell)</string>
+    <string name="browser_firefox_private_experimental">Firefox (Private, experimental)</string>
     <string name="browser_tor">Tor Browser</string>
-    <string name="firefox_private_not_supported_fallback">Direktes privates Öffnen wird von Firefox auf diesem Gerät nicht zuverlässig unterstützt – öffne normal in Firefox.</string>
+    <string name="firefox_private_not_supported_fallback">Direct private opening is not reliably supported by Firefox on this device – opening normally in Firefox.</string>
 
-    <string name="create_file">Liste erstellen</string>
-    <string name="create_file_title">Name der Liste </string>
-    <string name="create_file_hint">Dateiname ohne Endung</string>
-    <string name="file_created">Datei erstellt</string>
+    <string name="create_file">Create list</string>
+    <string name="create_file_title">List name</string>
+    <string name="create_file_hint">File name without extension</string>
+    <string name="file_created">File created</string>
 
-    <string name="remove_from_list_only">Nur aus Liste entfernen</string>
-    <string name="delete_file_really">Datei endgültig löschen</string>
-    <string name="delete_file_really_title">Datei endgültig löschen</string>
-    <string name="delete_file_really_message">Soll die Datei „%1$s“ wirklich aus dem Speicher gelöscht werden?
+    <string name="remove_from_list_only">Remove from list only</string>
+    <string name="delete_file_really">Delete file permanently</string>
+    <string name="delete_file_really_title">Delete file permanently</string>
+    <string name="delete_file_really_message">Do you really want to delete the file “%1$s” from storage?
 
-Diese Aktion kann nicht rückgängig gemacht werden.</string>
-    <string name="file_deleted_really_success">Datei wurde gelöscht</string>
-    <string name="file_deleted_really_failed">Datei konnte nicht gelöscht werden</string>
+This action cannot be undone.</string>
+    <string name="file_deleted_really_success">File deleted</string>
+    <string name="file_deleted_really_failed">File could not be deleted</string>
 
-    <string name="rename_file">Datei umbenennen</string>
-    <string name="rename_file_title">Datei umbenennen</string>
-    <string name="rename_file_hint">Neuer Dateiname</string>
-    <string name="file_renamed_success">Datei wurde umbenannt</string>
-    <string name="file_renamed_failed">Datei konnte nicht umbenannt werden</string>
+    <string name="rename_file">Rename file</string>
+    <string name="rename_file_title">Rename file</string>
+    <string name="rename_file_hint">New file name</string>
+    <string name="file_renamed_success">File renamed</string>
+    <string name="file_renamed_failed">File could not be renamed</string>
 
-    <string name="settings">Einstellungen</string>
-    <string name="settings_category_general">Allgemein</string>
+    <string name="settings">Settings</string>
+    <string name="settings_category_general">General</string>
     <string name="settings_category_info">Info</string>
-    <string name="settings_language">Sprache</string>
-    <string name="settings_theme">App-Design</string>
-    <string name="settings_build_version">Build-Version</string>
-    <string name="clear_opened_marker">Als ungesehen markieren</string>
-    <string name="url_copied_to_clipboard">URL in Zwischenablage kopiert</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">App theme</string>
+    <string name="settings_build_version">Build version</string>
+    <string name="clear_opened_marker">Mark as unseen</string>
+    <string name="url_copied_to_clipboard">URL copied to clipboard</string>
 
-    <string name="filter_action">Filtern</string>
-    <string name="filter_title">Liste filtern</string>
-    <string name="filter_active_short">Filter aktiv</string>
-    <string name="filter_active_summary">Aktiver Filter: %1$s</string>
-    <string name="filter_none">Kein Filter</string>
-    <string name="filter_apply">Übernehmen</string>
-    <string name="filter_reset">Zurücksetzen</string>
-    <string name="filter_select_at_least_one_rating">Mindestens eine Bewertung muss ausgewählt sein.</string>
+    <string name="filter_action">Filter</string>
+    <string name="filter_title">Filter list</string>
+    <string name="filter_active_short">Filter active</string>
+    <string name="filter_active_summary">Active filter: %1$s</string>
+    <string name="filter_none">No filter</string>
+    <string name="filter_apply">Apply</string>
+    <string name="filter_reset">Reset</string>
+    <string name="filter_select_at_least_one_rating">At least one rating must be selected.</string>
 
-    <string name="filter_section_seen">Gesehen / Ungesehen</string>
-    <string name="filter_section_ratings">Erlaubte Bewertungen</string>
-    <string name="filter_section_sort_by">Sortieren nach</string>
-    <string name="filter_section_sort_order">Reihenfolge</string>
+    <string name="filter_section_seen">Seen / Unseen</string>
+    <string name="filter_section_ratings">Allowed ratings</string>
+    <string name="filter_section_sort_by">Sort by</string>
+    <string name="filter_section_sort_order">Order</string>
 
-    <string name="filter_seen_all">Alle</string>
-    <string name="filter_seen_only_opened">Nur gesehen</string>
-    <string name="filter_seen_only_unopened">Nur ungesehen</string>
+    <string name="filter_seen_all">All</string>
+    <string name="filter_seen_only_opened">Seen only</string>
+    <string name="filter_seen_only_unopened">Unseen only</string>
 
-    <string name="filter_sort_original">Reihenfolge</string>
-    <string name="filter_sort_rating">Bewertung</string>
+    <string name="filter_sort_original">Order</string>
+    <string name="filter_sort_rating">Rating</string>
     <string name="filter_sort_url">A–Z</string>
-    <string name="filter_sort_order_asc">Aufsteigend</string>
-    <string name="filter_sort_order_desc">Absteigend</string>
+    <string name="filter_sort_order_asc">Ascending</string>
+    <string name="filter_sort_order_desc">Descending</string>
 
     <string name="filter_summary_seen">Status: %1$s</string>
-    <string name="filter_summary_ratings">Bewertungen: %1$s</string>
-    <string name="filter_summary_sort">Sortierung: %1$s (%2$s)</string>
+    <string name="filter_summary_ratings">Ratings: %1$s</string>
+    <string name="filter_summary_sort">Sorting: %1$s (%2$s)</string>
 
     <string-array name="language_entries">
         <item>Deutsch</item>
@@ -137,9 +145,9 @@ Diese Aktion kann nicht rückgängig gemacht werden.</string>
     </string-array>
 
     <string-array name="theme_entries">
-        <item>Nacht</item>
-        <item>Tag</item>
-        <item>Automatisch (System)</item>
+        <item>Night</item>
+        <item>Day</item>
+        <item>Automatic (System)</item>
     </string-array>
 
     <string-array name="theme_values">
@@ -148,12 +156,12 @@ Diese Aktion kann nicht rückgängig gemacht werden.</string>
         <item>auto</item>
     </string-array>
 
-    <string name="links_count_subtitle">%1$d Links</string>
-    <string name="links_filtered_count_subtitle">%1$d Treffer · %2$d Links</string>
-    <string name="drag_to_reorder">Zum Verschieben ziehen</string>
-    <string name="reorder_requires_original_order">Verschieben ist nur bei Sortierung „Reihenfolge“ aufsteigend verfügbar.</string>
-    <string name="share_app">App teilen</string>
-    <string name="share_app_chooser_title">App teilen</string>
-    <string name="share_app_message">Schau dir Link-Manager: 4Videos an:
-https://play.google.com/store/apps/details?id=com.tokama.linkmanager&amp;pcampaignid=web_share</string>
+    <string name="links_count_subtitle">%1$d links</string>
+    <string name="links_filtered_count_subtitle">%1$d matches · %2$d links</string>
+    <string name="drag_to_reorder">Drag to reorder</string>
+    <string name="reorder_requires_original_order">Moving is only available with sorting set to “Order” ascending.</string>
+    <string name="share_app">Share app</string>
+    <string name="share_app_chooser_title">Share app</string>
+    <string name="share_app_message">Check out Link-Manager: 4Videos:
+https://play.google.com/store/apps/details?id=com.tokama.linkmanager</string>
 </resources>

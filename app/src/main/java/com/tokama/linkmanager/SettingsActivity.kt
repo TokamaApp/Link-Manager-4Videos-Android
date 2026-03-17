@@ -15,6 +15,8 @@ import androidx.core.view.updatePadding
 
 class SettingsActivity : AppCompatActivity() {
 
+    private var appliedUiStateSignature: String = ""
+
     private lateinit var statusBarSpacer: View
     private lateinit var toolbar: Toolbar
     private lateinit var settingsContainer: View
@@ -45,6 +47,17 @@ class SettingsActivity : AppCompatActivity() {
                 .beginTransaction()
                 .replace(R.id.settingsContainer, SettingsFragment())
                 .commit()
+        }
+
+        appliedUiStateSignature = AppUiSettings.buildUiStateSignature(this)
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        val currentUiStateSignature = AppUiSettings.buildUiStateSignature(this)
+        if (currentUiStateSignature != appliedUiStateSignature) {
+            recreate()
         }
     }
 

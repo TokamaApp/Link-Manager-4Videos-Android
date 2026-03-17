@@ -42,6 +42,8 @@ import com.tokama.linkmanager.util.OpenedLinksSession
 
 class LinksActivity : AppCompatActivity() {
 
+    private var appliedUiStateSignature: String = ""
+
     private lateinit var fileUri: Uri
     private lateinit var fileName: String
     private lateinit var statusBarSpacer: View
@@ -118,10 +120,19 @@ class LinksActivity : AppCompatActivity() {
         setupActions()
         setupBackHandling()
         updateHeaderState()
+
+        appliedUiStateSignature = AppUiSettings.buildUiStateSignature(this)
     }
 
     override fun onResume() {
         super.onResume()
+
+        val currentUiStateSignature = AppUiSettings.buildUiStateSignature(this)
+        if (currentUiStateSignature != appliedUiStateSignature) {
+            recreate()
+            return
+        }
+
         loadLinks()
     }
 

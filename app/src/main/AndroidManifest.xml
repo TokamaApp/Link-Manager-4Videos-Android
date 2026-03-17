@@ -30,6 +30,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LinkManager">
 
+        <!--
+            Aktiviert die von AndroidX empfohlene automatische Persistierung der
+            per-App-Sprache auf Android 12 und älter.
+            Dadurch wird der erste Sprachwechsel nach einer Neuinstallation
+            konsistent gespeichert und beim nächsten Activity-Start früh genug
+            wiederhergestellt.
+         -->
+        <service
+            android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
+            android:enabled="false"
+            android:exported="false">
+            <meta-data
+                android:name="autoStoreLocales"
+                android:value="true" />
+        </service>
+
         <activity
             android:name=".LinksActivity"
             android:exported="false" />
