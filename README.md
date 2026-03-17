@@ -1,7 +1,7 @@
 <h1>
   <img src="./app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
        alt="Link-Manager: 4Videos App Icon"
-       width="40"
+       width="50"
        valign="middle">
   Link-Manager: 4Videos (Android)
 </h1>
