@@ -1,13 +1,33 @@
+# Gradle
 .gradle/
 build/
 */build/
+
+# Local machine config
 local.properties
+
+# IDE
 .idea/
 *.iml
+
+# Android Studio
 captures/
+
+# Signing / release keys
 *.jks
 *.keystore
+*.pem
+*.p12
+
+# Build artifacts
 *.apk
 *.aab
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+
+# OS files
 .DS_Store
 Thumbs.db
