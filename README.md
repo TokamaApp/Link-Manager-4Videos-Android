@@ -3,7 +3,7 @@ Android app for structured URL list management with import, rating, filtering, s
 
 ## Play Store
 
-<a href="https://play.google.com/store/apps/details?id=com.tokama.linkmanager&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">View on Google Play</a>
+[View on Google Play](https://play.google.com/store/apps/details?id=com.tokama.linkmanager)
 
 ## Features
 
