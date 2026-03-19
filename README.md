@@ -56,21 +56,21 @@ This repository is published publicly for **transparency and code inspection**.
 
 Its purpose is to allow users to review the implementation and build trust in the project.
 
-## License Status
+## License, Usage, Warranty and Liability
 
-This repository is **not open source**.
+This repository is **public for transparency and source inspection only**.
 
-No open-source license is granted for copying, modifying, redistributing, sublicensing, commercial use, or using this code in other projects.
+It is **not open source** and no open-source license is granted.
 
-See [NOTICE.md](NOTICE.md) and [COPYRIGHT.md](COPYRIGHT.md) for the usage restrictions.
+Except where mandatory law requires otherwise, the software, source code, files, and all repository contents are provided **"as is"** and **"as available"**, without warranty of any kind, whether express or implied, including but not limited to correctness, reliability, fitness for a particular purpose, non-infringement, availability, or error-free operation.
 
-## Usage Restriction
+To the maximum extent permitted by applicable law, the authors, copyright holders, and contributors shall **not be liable** for any direct, indirect, incidental, special, exemplary, consequential, or other damages, including but not limited to loss of data, loss of profits, business interruption, security issues, device problems, or other damages arising from or related to the use, inability to use, misuse, or interpretation of this repository, the software, or any part of it.
 
-Viewing the source code is allowed for inspection and trust purposes.
+Viewing the source code for inspection is allowed.
 
-Private, personal, and non-commercial evaluation of the software is allowed only within the limits described in the repository notices.
+Any copying, modification, redistribution, sublicensing, commercial use, integration into other projects, publication of modified versions, or creation of derivative works is not allowed without prior written permission.
 
-Any reuse of the source code, in whole or in part, in other software, projects, products, forks intended for development reuse, commercial contexts, or derivative works is not allowed without prior written permission.
+See [COPYRIGHT.md](./COPYRIGHT.md), [NOTICE.md](./NOTICE.md), and [DISCLAIMER.md](./DISCLAIMER.md) for details.
 
 ## Feedback
 
